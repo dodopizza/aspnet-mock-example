@@ -1,0 +1,2 @@
+New-Item -path "HKLM:\Software\Policies\Microsoft\SystemCertificates" -name "AuthRoot" -itemType "directory"
+New-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\SystemCertificates\AuthRoot" -Name DisableRootAutoUpdate -Value 1 -PropertyType "DWord"
