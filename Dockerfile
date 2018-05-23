@@ -10,6 +10,10 @@ ADD ./disable_windows_update_CA.ps1 ./
 
 ADD ./create_certificate.ps1 . /
 
+ADD ./setup_winrm_client.ps1 ./
+
+ADD ./setup_winrm_server.ps1 ./
+
 RUN ["powershell", "./disable_windows_update_CA.ps1"]
 
 RUN ["powershell", "./create_certificate.ps1"]
