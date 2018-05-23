@@ -22,4 +22,6 @@ RUN ["powershell", "./setup_winrm_client.ps1"]
 
 RUN ["powershell", "./setup_winrm_server.ps1"]
 
+ADD ./plink.exe C:/Windows/System32/plink.exe
+
 ENTRYPOINT ["powershell", "c:\\startup.ps1"]
