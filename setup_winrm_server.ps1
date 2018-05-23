@@ -1,4 +1,4 @@
-New-LocalUser  deploy -Password (ConvertTo-SecureString "clFjK0INYdAOndE47q" -AsPlainText -Force)
+New-LocalUser  deploy -Password (ConvertTo-SecureString "clFjK0INYdAOndE47q" -AsPlainText -Force) -AccountNeverExpires
 Add-LocalGroupMember -Group "Administrators" -Member "deploy"
 Add-LocalGroupMember -Group "Remote Management Users" -Member "deploy"
 Enable-PSRemoting
